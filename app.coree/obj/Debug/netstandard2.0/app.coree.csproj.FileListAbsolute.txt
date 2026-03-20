@@ -1,0 +1,10 @@
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\app.coree.deps.json
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\app.coree.dll
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\app.coree.pdb
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.csproj.AssemblyReference.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.AssemblyInfoInputs.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.AssemblyInfo.cs
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.csproj.CoreCompileInputs.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.dll
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\app.coree.pdb

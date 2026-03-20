@@ -1,0 +1,30 @@
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.deps.json
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.dll
+E:\C#\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.pdb
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.AssemblyReference.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfoInputs.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfo.cs
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.CoreCompileInputs.cache
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.dll
+E:\C#\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.pdb
+E:\New folder\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.deps.json
+E:\New folder\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.dll
+E:\New folder\New folder\app.coree\bin\Debug\netstandard2.0\App.Core.pdb
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.AssemblyReference.cache
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfoInputs.cache
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfo.cs
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.CoreCompileInputs.cache
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.dll
+E:\New folder\New folder\app.coree\obj\Debug\netstandard2.0\App.Core.pdb
+E:\C#\app.coree\bin\Debug\netstandard2.0\App.Core.deps.json
+E:\C#\app.coree\bin\Debug\netstandard2.0\App.Core.dll
+E:\C#\app.coree\bin\Debug\netstandard2.0\App.Core.pdb
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.AssemblyReference.cache
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfoInputs.cache
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfo.cs
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.CoreCompileInputs.cache
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.dll
+E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.pdb
