@@ -28,3 +28,14 @@ E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfo.cs
 E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.CoreCompileInputs.cache
 E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.dll
 E:\C#\app.coree\obj\Debug\netstandard2.0\App.Core.pdb
+E:\Github_projects\MiniStore-BackOffice\app.coree\bin\Debug\netstandard2.0\App.Core.deps.json
+E:\Github_projects\MiniStore-BackOffice\app.coree\bin\Debug\netstandard2.0\App.Core.dll
+E:\Github_projects\MiniStore-BackOffice\app.coree\bin\Debug\netstandard2.0\App.Core.pdb
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.AssemblyReference.cache
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfoInputs.cache
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.AssemblyInfo.cs
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.csproj.CoreCompileInputs.cache
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.sourcelink.json
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.dll
+E:\Github_projects\MiniStore-BackOffice\app.coree\obj\Debug\netstandard2.0\App.Core.pdb

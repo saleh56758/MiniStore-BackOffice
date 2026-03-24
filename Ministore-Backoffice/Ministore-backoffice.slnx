@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="../app.coree/App.Core.csproj" />
   <Project Path="../App.WindowsApp/App.WindowsApp.csproj" Id="0e5320e1-bacb-4efe-a273-f668b286ae32" />
   <Project Path="App.Winforms.csproj" Id="b2c648d3-012b-4e06-80ae-aa748a013010" />

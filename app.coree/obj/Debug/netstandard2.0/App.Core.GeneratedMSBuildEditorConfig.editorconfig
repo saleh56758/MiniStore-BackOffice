@@ -1,6 +1,6 @@
 is_global = true
 build_property.RootNamespace = App.Core
-build_property.ProjectDir = E:\C#\app.coree\
+build_property.ProjectDir = E:\Github_projects\MiniStore-BackOffice\app.coree\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

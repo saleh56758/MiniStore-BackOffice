@@ -158,7 +158,7 @@
             txtName.Margin = new Padding(3, 4, 3, 4);
             txtName.Name = "txtName";
             txtName.Size = new Size(602, 27);
-            txtName.TabIndex = 1;
+            txtName.TabIndex = 0;
             // 
             // cmbCat
             // 
@@ -168,7 +168,7 @@
             cmbCat.Margin = new Padding(3, 4, 3, 4);
             cmbCat.Name = "cmbCat";
             cmbCat.Size = new Size(602, 28);
-            cmbCat.TabIndex = 3;
+            cmbCat.TabIndex = 1;
             // 
             // numStock
             // 
@@ -179,7 +179,7 @@
             numStock.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             numStock.Name = "numStock";
             numStock.Size = new Size(602, 27);
-            numStock.TabIndex = 7;
+            numStock.TabIndex = 3;
             // 
             // cmbStatus
             // 
@@ -189,7 +189,7 @@
             cmbStatus.Margin = new Padding(3, 4, 3, 4);
             cmbStatus.Name = "cmbStatus";
             cmbStatus.Size = new Size(602, 28);
-            cmbStatus.TabIndex = 9;
+            cmbStatus.TabIndex = 4;
             // 
             // txtID
             // 
@@ -199,7 +199,7 @@
             txtID.Margin = new Padding(3, 4, 3, 4);
             txtID.Name = "txtID";
             txtID.Size = new Size(602, 27);
-            txtID.TabIndex = 11;
+            txtID.TabIndex = 5;
             // 
             // numPrice
             // 
@@ -209,7 +209,7 @@
             numPrice.Margin = new Padding(3, 4, 3, 4);
             numPrice.Name = "numPrice";
             numPrice.Size = new Size(602, 27);
-            numPrice.TabIndex = 12;
+            numPrice.TabIndex = 2;
             // 
             // pnlname
             // 
@@ -220,7 +220,7 @@
             pnlname.Margin = new Padding(3, 4, 3, 4);
             pnlname.Name = "pnlname";
             pnlname.Size = new Size(146, 42);
-            pnlname.TabIndex = 13;
+            pnlname.TabIndex = 6;
             // 
             // lblname
             // 
@@ -240,7 +240,7 @@
             pnlcategory.Margin = new Padding(3, 4, 3, 4);
             pnlcategory.Name = "pnlcategory";
             pnlcategory.Size = new Size(146, 42);
-            pnlcategory.TabIndex = 14;
+            pnlcategory.TabIndex = 7;
             // 
             // lblcategory
             // 
@@ -260,7 +260,7 @@
             pnlprice.Margin = new Padding(3, 4, 3, 4);
             pnlprice.Name = "pnlprice";
             pnlprice.Size = new Size(146, 42);
-            pnlprice.TabIndex = 15;
+            pnlprice.TabIndex = 8;
             // 
             // lblprice
             // 
@@ -280,7 +280,7 @@
             pnlstock.Margin = new Padding(3, 4, 3, 4);
             pnlstock.Name = "pnlstock";
             pnlstock.Size = new Size(146, 42);
-            pnlstock.TabIndex = 16;
+            pnlstock.TabIndex = 9;
             // 
             // lblstock
             // 
@@ -300,7 +300,7 @@
             pnlstatus.Margin = new Padding(3, 4, 3, 4);
             pnlstatus.Name = "pnlstatus";
             pnlstatus.Size = new Size(146, 42);
-            pnlstatus.TabIndex = 17;
+            pnlstatus.TabIndex = 10;
             // 
             // lblstatus
             // 
@@ -320,7 +320,7 @@
             pnlID.Margin = new Padding(3, 4, 3, 4);
             pnlID.Name = "pnlID";
             pnlID.Size = new Size(146, 42);
-            pnlID.TabIndex = 18;
+            pnlID.TabIndex = 11;
             // 
             // lblID
             // 

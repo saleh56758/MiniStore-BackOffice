@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\app.coree\\App.Core.csproj",
+      "projectUniqueName": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj",
       "projectName": "App.Core",
-      "projectPath": "E:\\C#\\app.coree\\App.Core.csproj",
+      "projectPath": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "E:\\C#\\app.coree\\obj\\",
+      "outputPath": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\App.WindowsApp\\App.WindowsApp.csproj": {}
+    "E:\\Github_projects\\MiniStore-BackOffice\\App.WindowsApp\\App.WindowsApp.csproj": {}
   },
   "projects": {
-    "E:\\C#\\app.coree\\App.Core.csproj": {
+    "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\app.coree\\App.Core.csproj",
+        "projectUniqueName": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj",
         "projectName": "App.Core",
-        "projectPath": "E:\\C#\\app.coree\\App.Core.csproj",
+        "projectPath": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\app.coree\\obj\\",
+        "outputPath": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -72,14 +72,14 @@
         }
       }
     },
-    "E:\\C#\\App.WindowsApp\\App.WindowsApp.csproj": {
+    "E:\\Github_projects\\MiniStore-BackOffice\\App.WindowsApp\\App.WindowsApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\App.WindowsApp\\App.WindowsApp.csproj",
+        "projectUniqueName": "E:\\Github_projects\\MiniStore-BackOffice\\App.WindowsApp\\App.WindowsApp.csproj",
         "projectName": "App.WindowsApp",
-        "projectPath": "E:\\C#\\App.WindowsApp\\App.WindowsApp.csproj",
+        "projectPath": "E:\\Github_projects\\MiniStore-BackOffice\\App.WindowsApp\\App.WindowsApp.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\App.WindowsApp\\obj\\",
+        "outputPath": "E:\\Github_projects\\MiniStore-BackOffice\\App.WindowsApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,8 +100,8 @@
           "net10.0-windows7.0": {
             "targetAlias": "net10.0-windows",
             "projectReferences": {
-              "E:\\C#\\app.coree\\App.Core.csproj": {
-                "projectPath": "E:\\C#\\app.coree\\App.Core.csproj"
+              "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj": {
+                "projectPath": "E:\\Github_projects\\MiniStore-BackOffice\\app.coree\\App.Core.csproj"
               }
             }
           }
