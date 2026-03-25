@@ -20,22 +20,39 @@ namespace App.Core.Services
 
         public Product Add(Product product)
         {
-            throw new NotImplementedException();
+            if (product == null) throw new ArgumentNullException(nameof(product));
+            product.ID = GenerateId();
+            _products.Add(product);
+            return product;
         }
 
         public bool Update(Product product)
         {
-            return false;
+            if (product == null) return false;
+
+            Product? existing = _products.Find(p => p.ID == product.ID);
+            if (existing == null) return false;
+
+            existing.Name = product.Name;
+            existing.Category = product.Category;
+            existing.Price = product.Price;
+            existing.Status = product.Status;
+            existing.Stock = product.Stock;
+            return true;
         }
 
         public bool Delete(string id)
         {
-            return false;
+            if (string.IsNullOrEmpty(id)) return false;
+            var existing = _products.Find(p => p.ID == id);
+            if (existing == null) return false;
+            return _products.Remove(existing);
         }
 
-        public Product GetById(string id)
+        public Product? GetById(string id)
         {
-            throw new NotImplementedException();
+            Product? product = _products.Find(p => p.ID == id);
+            return product;
         }
 
         public List<Product> GetAll()
