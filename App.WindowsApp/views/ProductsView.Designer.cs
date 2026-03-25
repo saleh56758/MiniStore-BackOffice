@@ -232,6 +232,7 @@
             txtboxsearch.Name = "txtboxsearch";
             txtboxsearch.Size = new Size(280, 27);
             txtboxsearch.TabIndex = 3;
+            txtboxsearch.TextChanged += txtboxsearch_TextChanged;
             // 
             // cmbcategory
             // 
@@ -243,6 +244,7 @@
             cmbcategory.Name = "cmbcategory";
             cmbcategory.Size = new Size(208, 28);
             cmbcategory.TabIndex = 4;
+            cmbcategory.SelectedIndexChanged += cmbcategory_SelectedIndexChanged;
             // 
             // cmbstatus
             // 

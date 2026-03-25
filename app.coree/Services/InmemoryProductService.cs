@@ -21,10 +21,13 @@ namespace App.Core.Services
         public Product Add(Product product)
         {
             if (product == null) throw new ArgumentNullException(nameof(product));
+
             product.ID = GenerateId();
             _products.Add(product);
+
             return product;
         }
+        
 
         public bool Update(Product product)
         {
@@ -62,7 +65,29 @@ namespace App.Core.Services
 
         public List<Product> Search(string text, ProductCategoryEnum? category, ProductStatusEnum? status)
         {
-            throw new NotImplementedException();
+            List<Product> _filtered = _products.ToList();
+
+            if (!string.IsNullOrWhiteSpace(text))
+            {
+                _filtered = _filtered
+                    .Where(p => p.Name != null && p.Name.IndexOf(text, StringComparison.OrdinalIgnoreCase) >= 0)
+                    .ToList();
+            }
+
+            if (category is not null)
+            {
+                _filtered = _filtered.Where(p => p.Category == category).ToList();
+            }
+
+            if (status is not null)
+            {
+                _filtered = _filtered.Where(p => p.Status == status.Value).ToList();
+            }
+
+            return _filtered;
+
+
+
         }
 
         private void GenerateFakeProducts()

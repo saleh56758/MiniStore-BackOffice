@@ -118,6 +118,7 @@
             btncancel.Text = "Cancel";
             btncancel.TextImageRelation = TextImageRelation.ImageBeforeText;
             btncancel.UseVisualStyleBackColor = true;
+            btncancel.Click += btncancel_Click;
             // 
             // tblForm
             // 

@@ -6,6 +6,7 @@ namespace App.Core.Utilities
 {
     public enum ProductStatusEnum
     {
+        None,
         Active,
         Inactive,
         Low,

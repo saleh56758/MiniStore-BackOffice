@@ -12,6 +12,8 @@ using App.Core.Models;
 using App.Core.Utilities;
 using App.WindowsApp.Forms;
 using WindowsFormsApp1.Forms;
+using App.Core.Services;
+
 namespace App.WindowsApp.views
 {
     public partial class ProductsView : UserControl
@@ -23,32 +25,45 @@ namespace App.WindowsApp.views
         {
             _service = ser;
             InitializeComponent();
-            dgvproducts.DataSource = _dgvbindingSource;
 
+            // guard against designer not having created the control (nullable warnings)
+            if (dgvproducts != null)
+                dgvproducts.DataSource = _dgvbindingSource;
         }
 
         private void ProductsView_Load(object sender, EventArgs e)
         {
+            // guard controls that the designer may have marked nullable
+            if (cmbcategory == null || cmbstatus == null || txtboxsearch == null)
+                return;
+
+            // Populate category ComboBox: add a sentinel "--All--" then enum values as items
             cmbcategory.Items.Clear();
             cmbcategory.Items.Add("--All--");
-            cmbcategory.Items.AddRange(Enum.GetNames(typeof(ProductCategoryEnum)));
+            foreach (var val in Enum.GetValues(typeof(ProductCategoryEnum)).Cast<ProductCategoryEnum>())
+                cmbcategory.Items.Add(val);
             cmbcategory.SelectedIndex = 0;
+
+            // Populate status ComboBox similarly
             cmbstatus.Items.Clear();
             cmbstatus.Items.Add("--All--");
-            cmbstatus.Items.AddRange(Enum.GetNames(typeof(ProductStatusEnum)));
+            foreach (var val in Enum.GetValues(typeof(ProductStatusEnum)).Cast<ProductStatusEnum>())
+                cmbstatus.Items.Add(val);
             cmbstatus.SelectedIndex = 0;
+
             if (_service == null)
                 return;
-            _service.GetAll();
-            _dgvbindingSource.DataSource = _service.GetAll(); 
+
+            _dgvbindingSource.DataSource = _service.GetAll();
 
 
         }
 
         private void btnadd_Click(object sender, EventArgs e)
         {
-            ProductsForm prodForm=new ProductsForm(ProductFormModeEnum.Add,null);
+            ProductsForm prodForm = new ProductsForm(ProductFormModeEnum.Add, null, _service);
             prodForm.ShowDialog();
+            refreshGrid();
         }
 
         private void btnview_Click(object sender, EventArgs e)
@@ -56,7 +71,7 @@ namespace App.WindowsApp.views
             Product? selectedProduct = _dgvbindingSource.Current as Product;
             if (selectedProduct != null)
             {
-                ProductsForm prodForm = new ProductsForm(ProductFormModeEnum.View, selectedProduct);
+                ProductsForm prodForm = new ProductsForm(ProductFormModeEnum.View, selectedProduct, _service);
                 prodForm.ShowDialog();
             }
 
@@ -64,13 +79,14 @@ namespace App.WindowsApp.views
 
         private void btnedit_Click(object sender, EventArgs e)
         {
-            Product? selectedProduct=_dgvbindingSource.Current as Product;
+            Product? selectedProduct = _dgvbindingSource.Current as Product;
             if (selectedProduct != null)
             {
-                ProductsForm prodForm = new ProductsForm(ProductFormModeEnum.Edit, selectedProduct);
+                ProductsForm prodForm = new ProductsForm(ProductFormModeEnum.Edit, selectedProduct, _service);
                 prodForm.ShowDialog();
+                refreshGrid();
             }
-            
+
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -82,5 +98,54 @@ namespace App.WindowsApp.views
         {
 
         }
+
+        private void refreshGrid()
+        {
+            if (_service == null || _dgvbindingSource == null)
+                return;
+
+            string searchText = txtboxsearch?.Text ?? string.Empty;
+
+            ProductCategoryEnum? selectedCategory = null;
+            if (cmbcategory?.SelectedItem != null)
+            {
+                var sel = cmbcategory.SelectedItem.ToString();
+                if (!string.IsNullOrEmpty(sel) && !sel.Equals("--All--", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (Enum.TryParse<ProductCategoryEnum>(sel, out var parsedCat))
+                        selectedCategory = parsedCat;
+                }
+            }
+
+            ProductStatusEnum? selectedStatus = null;
+            if (cmbstatus?.SelectedItem != null)
+            {
+                var sel = cmbstatus.SelectedItem.ToString();
+                if (!string.IsNullOrEmpty(sel) && !sel.Equals("--All--", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (Enum.TryParse<ProductStatusEnum>(sel, out var parsedStatus))
+                        selectedStatus = parsedStatus;
+                }
+            }
+
+            // Use search result (previous code overwrote it with GetAll())
+            _dgvbindingSource.DataSource = _service.Search(searchText, selectedCategory, selectedStatus);
+        }
+
+        private void txtboxsearch_TextChanged(object sender, EventArgs e)
+        {
+            refreshGrid();
+        }
+
+        private void cmbcategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshGrid();
+        }
+        private void cmbstatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            refreshGrid();
+        }
     }
+
+
 }
