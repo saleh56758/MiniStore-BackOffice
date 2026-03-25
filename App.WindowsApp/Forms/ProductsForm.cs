@@ -14,32 +14,34 @@ namespace WindowsFormsApp1.Forms
 {
     public partial class ProductsForm : Form
     {
+        ProductFormModeEnum _mode;
         public ProductsForm(ProductFormModeEnum mode, Product? p)
         {
             InitializeComponent();
             numPrice.Maximum = Decimal.MaxValue;
             numStock.Maximum = Decimal.MaxValue;
             cmbCat.Items.Clear();
-            
-            cmbCat.DataSource=Enum.GetValues(typeof(ProductCategoryEnum));
+
+            cmbCat.DataSource = Enum.GetValues(typeof(ProductCategoryEnum));
             cmbCat.SelectedIndex = 0;
             cmbStatus.Items.Clear();
 
             cmbStatus.DataSource = Enum.GetValues(typeof(ProductStatusEnum));
             cmbStatus.SelectedIndex = 0;
-          
 
-            if (mode==ProductFormModeEnum.View)
+            _mode = mode;
+            if (mode == ProductFormModeEnum.View)
             {
                 btnsave.Visible = false;
-                
+
             }
             else if (mode == ProductFormModeEnum.Edit)
 
-            { btnsave.Text = "Update";
-               
+            {
+                btnsave.Text = "Update";
+
             }
-            if (mode==ProductFormModeEnum.Edit || mode==ProductFormModeEnum.View)
+            if (mode == ProductFormModeEnum.Edit || mode == ProductFormModeEnum.View)
             {
                 txtID.Text = p.ID;
                 txtName.Text = p.Name;
@@ -48,10 +50,15 @@ namespace WindowsFormsApp1.Forms
                 numPrice.Value = p.Price;
                 numStock.Value = p.Stock;
             }
-       
-                    
-                    }
 
-        
+
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            if (_mode == ProductFormModeEnum.Add)
+            {
+            }
+        }
     }
 }

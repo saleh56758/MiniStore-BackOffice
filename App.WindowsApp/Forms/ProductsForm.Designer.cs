@@ -101,6 +101,7 @@
             btnsave.Text = "Save";
             btnsave.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnsave.UseVisualStyleBackColor = true;
+            btnsave.Click += btnsave_Click;
             // 
             // btncancel
             // 
